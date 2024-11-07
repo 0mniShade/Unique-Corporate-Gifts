@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products - Unique Corporate Gifts</title>
+    <title>Shop - Unique Corporate Gifts</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="cart.html">Cart</a>
+        <nav class="top-right-buttons">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="contacts.html" class="nav-button">Contact Us</a>
         </nav>
     </header>
     <main>
-        <h1>Our Products</h1>
-        <section class="product-grid">
-            <!-- Sample Product Item -->
-            <div class="product-item">
-                <img src="placeholder.jpg" alt="Product Image">
-                <h2>Product Name</h2>
-                <p>R299.99</p>
-                <a href="product-details.html" class="button">View Details</a>
+        <section class="product-listing">
+            <h1>Our Products</h1>
+            <div class="product-container">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h2>Gift Set A</h2>
+                    <p>Description of Gift Set A</p>
+                    <p class="price">R500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h2>Gift Set B</h2>
+                    <p>Description of Gift Set B</p>
+                    <p class="price">R600</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+
+                <!-- More products can be added here -->
             </div>
-            <!-- Add more product items here -->
         </section>
     </main>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/27630612448" target="_blank" class="whatsapp-float-button">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 </body>
 </html>
