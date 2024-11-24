@@ -1,0 +1,379 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure body and html fill the entire height of the screen */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Light neutral background */
+}
+
+/* Header Styles */
+header {
+    background-color: #2b2b2b; /* Charcoal for header */
+    color: #f9d342; /* Accent color for text (golden-yellow) */
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 2em;
+    color: #f9d342; /* Match the header text with accent color */
+    margin: 0;
+}
+
+header nav a {
+    color: #f9d342;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+header nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+    min-height: calc(100vh - 120px); /* Ensures there's enough space for the footer */
+    padding: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2b2b2b; /* Same as header */
+    color: #f9d342;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Front Page Styles */
+.front-page {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.front-page h2 {
+    font-size: 2em;
+    color: #2b2b2b;
+    margin-bottom: 20px;
+}
+
+.front-page p {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.front-page .product {
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(33% - 20px); /* Three products per row */
+}
+
+.front-page .product h3 {
+    color: #2b2b2b;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.front-page .product p {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+/* Slideshow Styles */
+.slideshow {
+    max-width: 100%;
+    position: relative;
+    margin: 20px auto;
+    background-color: #2b2b2b; /* Charcoal background for slideshow */
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    opacity: 0.85;
+}
+
+.caption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(43, 43, 43, 0.7); /* Semi-transparent charcoal overlay */
+    color: #f9d342;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Category Section Styles */
+.categories {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.categories h2 {
+    color: #2b2b2b; /* Dark text for section headers */
+    margin-bottom: 15px;
+}
+
+.category {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    color: #2b2b2b;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* About Us Page Styles */
+.about-us {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.about-us h2 {
+    color: #2b2b2b;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-us p {
+    color: #555; /* Slightly muted text color for readability */
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+/* Sectioned About Us Layout */
+.about-section {
+    margin-bottom: 30px;
+}
+
+.about-values, .about-services, .why-choose-us {
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-values h3, .about-services h3, .why-choose-us h3 {
+    color: #2b2b2b;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+/* List Styling */
+.about-values ul, .why-choose-us ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #555;
+}
+
+.about-values ul li, .why-choose-us ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Services Boxes */
+.service {
+    background: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: 500;
+    font-size: 1em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Contact Section Styles */
+.contact-us {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-us h2 {
+    color: #2b2b2b;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Flexbox layout for Contact Info and Form */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.contact-info {
+    font-size: 1.1em;
+    color: #555;
+    width: 45%; /* Half width for contact info */
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Half width for the form */
+}
+
+.contact-form h3 {
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #93328e;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #93328e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #6f1e69;
+}
+
+/* WhatsApp Button Styles */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128c7e; /* Darker green for hover effect */
+}
+
+.whatsapp-button i {
+    margin-right: 10px;
+    font-size: 1.4em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-info, .contact-form {
+        width: 90%; /* Adjust form and info sections to full width on small screens */
+    }
+
+    .about-us {
+        padding: 20px;
+    }
+
+    .about-values, .about-services, .why-choose-us {
+        padding: 15px;
+    }
+
+    .about-us h2 {
+        font-size: 1.8em;
+    }
+
+    .about-values h3, .about-services h3, .why-choose-us h3 {
+        font-size: 1.2em;
+    }
+
+    .front-page h2 {
+        font-size: 1.8em;
+    }
+
+    .front-page p {
+        font-size: 1.1em;
+    }
+
+    .front-page .product {
+        width: 100%; /* Stack products vertically on small screens */
+    }
+
+    
+}
